@@ -1,0 +1,41 @@
+{
+  "scene-title": {
+    "detail": "Catalog Currency",
+    "new": "Create Catalog Currency",
+    "back-to-currencies": "Back to Currencies"
+  },
+  "form": {
+    "name": "Name",
+    "code": "Code",
+    "symbol": "Symbol",
+    "rate": "Rate",
+    "decimal-places": "Decimal Places",
+    "is-main": "Is Main",
+    "is-main-warning-new": "Main currency can only be changed on already existing currencies",
+    "is-main-info": "Main currency can be only switched off by setting another currency as main",
+    "is-main-warning-detail": "By changing currency to main, all rates and price related values in catalog will be recalculated according to currently set rates and rounded with precision to decimal places of new main currency. Tax rates will need to be changed manually.",
+    "submit": {
+      "new": "Create",
+      "detail": "Save"
+    }
+  },
+  "tax-rates": {
+    "title": "Tax Rates",
+    "create-new-tax-rate": "Create New Tax Rate",
+    "columns": {
+      "id": "ID",
+      "rate": "Rate"
+    },
+    "context-menu": {
+      "edit": "Edit",
+      "delete": "Delete",
+      "delete-dialog": {
+        "text": "Are you sure you want to remove this tax rate? All catalog related values will be affected by this action.",
+        "confirm": "Yes",
+        "cancel": "No"
+      }
+    },
+    "no-tax-rate": "No Tax Rate",
+    "delete-success": "Tax rate was successfully deleted"
+  }
+}

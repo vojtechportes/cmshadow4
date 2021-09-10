@@ -1,0 +1,78 @@
+{
+  "scene-title": {
+    "new": "New Catalog Item",
+    "detail": "Catalog Item Detail",
+    "back-to-catalog-items": "Back to Catalog Items"
+  },
+  "create": {
+    "form": {
+      "template": "Template",
+      "submit": "Continue",
+      "create-success": "Catalog item was sucessfully created"
+    }
+  },
+  "detail": {
+    "form": {
+      "submit": "Save"
+    }
+  },
+  "fields": {
+    "gallery": {
+      "new-images": "New Images",
+      "upload-files-text": "Click or drag and drop files to upload..."
+    },
+    "image": {
+      "upload-file-text": "Click or drag and drop file to upload...",
+      "delete": "Delete"
+    },
+    "gallery-image": {
+      "delete": "Delete",
+      "title": "Title",
+      "description": "Description"
+    },
+    "tax-rate": {
+      "no-tax-rate": "No Tax Rate",
+      "main-tax-rate-info": "Other currencies will inherit tax rate from main currency"
+    },
+    "link": {
+      "target": {
+        "label": "Target",
+        "self": "Self",
+        "blank": "Blank",
+        "parent": "Parent",
+        "top": "Top"
+      },
+      "format": {
+        "label": "Format",
+        "default": "Default",
+        "tel": "Phone number",
+        "mailto": "Email"
+      },
+      "rel": {
+        "label": "Rel"
+      }
+    },
+    "price": {
+      "no-default-currency-for-language": "Default currency for language {{language}} is not set",
+      "no-main-currency": "Main currency is not set"
+    }
+  },
+  "categories": {
+    "categories": "Categories"
+  },
+  "info": {
+    "created-at": "Created At",
+    "modified-at": "Modified At",
+    "published-at": "Published At",
+    "status": "Status",
+    "published": "Published",
+    "publish": "Publsih",
+    "unpublish": "Unpublish",
+    "delete": "Delete"
+  },
+  "tabs": {
+    "data": "Data",
+    "categories": "Categories"
+  },
+  "save-success": "Catalog item was sucessfully saved"
+}

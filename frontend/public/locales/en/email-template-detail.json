@@ -1,0 +1,21 @@
+{
+  "scene-title": {
+    "new": "New Email Template",
+    "detail": "Email Template Detail",
+    "back-to-email-templates": "Back to Email Templates"
+  },
+  "form": {
+    "type": "Type",
+    "content": {
+      "label": "Content",
+      "type-order-note": "<p>You can use following variables in your email template:</p><ul><li>CURRENCY_SYMBOL</li><li>CURRENCY_CODE</li><li>CURRENCY_NAME</li><li>CUSTOMER_NAME</li><li>CUSTOMER_EMAIL</li><li>CUSTOMER_PHONE</li><li>CUSTOMER_NOTE</li><li>CATALOG_ITEM (object *1)</li><li>ORDER_ID</li><li>CREATED_AT</li></ul><p>*1 CATALOG_ITEM variable is an object in following format:</p><div style=\"margin: 1rem 0; width: 32rem;\" class=\"ant-card ant-card-bordered\"><div class=\"ant-card-body\"><pre><code>{\n\t[fieldName: string]: { \n\t\tkey: string,\n\t\tname: string,\n\t\tvalue: string,\n\t\tdefault_value: string,\n\t\ttype: enum,\n\t\tis_multilingual: 0 | 1,\n\t\tlanguage: null | string\n \t}\n}</code></pre></div></div><p>For more information, please consult Blade <a href=\"https://laravel.com/docs/6.x/blade\" target=\"_blank\">documentation</a></p>"
+    },
+    "language": "Language",
+    "submit": {
+      "new": "Create",
+      "detail": "Save"
+    }
+  },
+  "create-success": "Email template was successfully created",
+  "update-success": "Email template was successfully updated"
+}

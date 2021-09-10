@@ -1,0 +1,18 @@
+{
+  "scene-title": {
+    "detail": "Catalog Currency Tax Rate",
+    "new": "Create Catalog Currency Tax Rate",
+    "back-to-catalog-currency-detail": "Back to Catalog Currency Detail"
+  },
+  "form": {
+    "rate": "Rate",
+    "no-rate": "No Rate",
+    "no-rate-info": "Turning no rate on will give you possibility to select no tax rate for catalog item.",
+    "submit": {
+      "detail": "Save",
+      "new": "Create"
+    },
+    "create-success": "Catalog currency tax rate was successfully created",
+    "update-success": "Catalog currency tax rate was successfully update"
+  }
+}

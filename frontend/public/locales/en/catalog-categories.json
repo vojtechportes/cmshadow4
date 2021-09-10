@@ -1,0 +1,23 @@
+{
+  "scene-title": "Catalog Categories",
+  "create-new-catalog-category": "Create New Catalog Category",
+  "tree": {
+    "items-count": "({{itemsCount}})",
+    "published": "Published",
+    "context-menu": {
+      "edit": "Edit",
+      "create": "Create subcategory",
+      "publish": "Publish",
+      "unpublish": "Unpublish",
+      "delete": "Delete",
+      "delete-dialog": {
+        "text": "Are you sure you want to delete this category? You will also delete any subordinated categories.",
+        "confirm": "Yes",
+        "cancel": "No"
+      }
+    }
+  },
+  "delete-success": "Category was successfully deleted",
+  "publish-success": "Category was successfully published",
+  "unpublish-success": "Category was successfully unpublished"  
+}

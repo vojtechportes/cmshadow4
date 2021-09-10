@@ -1,0 +1,17 @@
+{
+  "scene-title": {
+    "detail": "Button",
+    "new": "New Button",
+    "back-to-buttons": "Back to Buttons"
+  },
+  "form": {
+    "name": "Name",
+    "class-name": "Class Name",
+    "submit": {
+      "new": "Create",
+      "detail": "Save"
+    }
+  },
+  "create-success": "Button was successfully created",
+  "update-success": "Button was successfully updated"
+}

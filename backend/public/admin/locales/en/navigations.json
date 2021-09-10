@@ -1,0 +1,11 @@
+{
+  "scene-title": "Navigations",
+  "create-new-navigation": "Create New Navigation",
+  "table": {
+    "columns": {
+      "id": "ID",
+      "name": "Name",
+      "path": "Path"
+    }
+  }
+}

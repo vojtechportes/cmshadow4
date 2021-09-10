@@ -1,0 +1,23 @@
+{
+  "scene-title": {
+    "new": "Create Navigation Item",
+    "detail": "Edit Navigation Item",
+    "back-to-navigation-detail": "Back to Navigation Detail"
+  },
+  "form": {
+    "parent-id": "Parent item",
+    "title": "Title",
+    "page-identifier": "Linked page",
+    "path": "Path",
+    "target": "Target",
+    "html-class-name": "HTML class name",
+    "html-id": "HTML ID",
+    "weight": "Weight",
+    "submit": {
+      "new": "Create",
+      "detail": "Save"
+    }
+  },
+  "update-success": "Navigation item was successfully updated",
+  "create-success": "Navigation item was successfully updated"
+}

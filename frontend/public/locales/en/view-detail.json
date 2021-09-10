@@ -1,0 +1,17 @@
+{
+  "scene-title": {
+    "detail": "View",
+    "new": "New View",
+    "back-to-views": "Back to Views"
+  },
+  "form": {
+    "name": "Name",
+    "path": "Path",
+    "submit": {
+      "new": "Create",
+      "detail": "Save"
+    }
+  },
+  "create-success": "View was successfully created",
+  "update-success": "View was successfully updated"
+}

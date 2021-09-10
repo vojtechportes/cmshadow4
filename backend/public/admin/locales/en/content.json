@@ -1,0 +1,20 @@
+{
+  "table": {
+    "columns": {
+      "name": "Name",
+      "path": "Path",
+      "status": "Status",
+      "version": "Version",
+      "created-at": "Created At",
+      "modified-at": "Modified At"
+    },
+    "published-in-previous-version": "Published in previous version",
+    "context-menu": {
+      "edit": "Edit",
+      "add": "Add page here",
+      "publish": "Publish",
+      "unpublish": "Unpublish",
+      "delete": "Delete"
+    }
+  }
+}

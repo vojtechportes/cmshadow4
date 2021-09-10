@@ -1,0 +1,26 @@
+<div>
+  <ul>
+    {items && iterator(items, (item, renderItem) => {
+      let path = item.path;
+      let isVisible = true;
+
+      if (item.page) {
+        console.log(item.page);
+        let path = item.page.published_path;
+        let isVisible = item.page.is_published === 1;
+      }
+
+      if (isVisible) {
+        return (<li>
+          <a href={path} target={"_" + item.target.toLowerCase()}>
+            {item.title}
+          </a>
+
+          {item.children && (<ul>{iterator(item.children, renderItem)}</ul>)}
+        </li>);
+      } else {
+        return null;
+      }
+    })}
+  </ul>
+</div>

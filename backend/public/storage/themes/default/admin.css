@@ -1,0 +1,70 @@
+[class^="cms__"] {
+  font-family: Arial;
+}
+
+.cms__content {
+  padding: 24px;
+}
+
+.cms__warning {
+  padding: 12px 24px;
+  background-color: #fa8c16;
+  color: #fff;
+}
+
+.cms__toolbar {
+  position: fixed;
+  top: 0;
+  z-index: 999999;
+  width: 100%;
+  background-color: #D9D9D9;
+  -webkit-box-shadow: 0px 8px 16px -2px rgba(0,0,0,0.3);
+  -moz-box-shadow: 0px 8px 16px -2px rgba(0,0,0,0.3);
+  box-shadow: 0px 8px 16px -2px rgba(0,0,0,0.3);
+}
+
+.cms__toolbar_content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 24px;
+}
+
+.cms__button {
+  line-height: 1.5715;
+  position: relative;
+  display: inline-block;
+  font-weight: 400;
+  white-space: nowrap;
+  text-align: center;
+  background-image: none;
+  border: 1px solid transparent;
+  -webkit-box-shadow: 0 2px 0 rgba(0,0,0,.015);
+  box-shadow: 0 2px 0 rgba(0,0,0,.015);
+  cursor: pointer;
+  -webkit-transition: all .3s cubic-bezier(.645,.045,.355,1);
+  transition: all .3s cubic-bezier(.645,.045,.355,1);
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  height: 32px;
+  padding: 4px 15px;
+  font-size: 14px;
+  border-radius: 2px;
+  color: rgba(0,0,0,.65);
+  background-color: #fff;
+  border-color: #d9d9d9;
+}
+
+.cms__button--primary {
+  color: #fff;
+  background-color: #1890ff;
+  border-color: #1890ff;
+  text-shadow: 0 -1px 0 rgba(0,0,0,.12);
+  -webkit-box-shadow: 0 2px 0 rgba(0,0,0,.045);
+  box-shadow: 0 2px 0 rgba(0,0,0,.045);
+  text-transform: none;
+}

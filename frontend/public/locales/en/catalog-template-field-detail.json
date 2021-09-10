@@ -1,0 +1,29 @@
+{
+  "scene-title": {
+    "new": "New Catalog Template Field",
+    "detail": "Catalog Template Field",
+    "back-to-template-detail": "Back to Template Detail"
+  },
+  "form": {
+    "type": "Type",
+    "type-warning": "In case you are changing type to IMAGE, GALLERY, LINK, DATE or DATE_TIME excluding change from DATE to DATE_TIME and vice versa, all Catalog item values related to this field will be erased.",
+    "name": "Name",
+    "key": "Key",
+    "label": "Label",
+    "default-value": "Default Value",
+    "is-multilingual": "Is Multilingual",
+    "use-in-listing": "Use in Listing",
+    "is-sortable": "Is Sortable",
+    "is-searchable": "Is Searchable",
+    "weight": "Weight",
+    "submit": {
+      "new": {
+        "create": "Create",
+        "create-and-create-another": "Create and Create Another"
+      },
+      "detail": "Save"
+    },
+    "create-success": "Template field was successfully created",
+    "update-success": "Template field was successfully updated"
+  }
+}

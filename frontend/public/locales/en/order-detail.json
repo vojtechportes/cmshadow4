@@ -1,0 +1,37 @@
+{
+  "scene-title": {
+    "title": "Order Detail",
+    "back-to-orders": "Back to Orders"
+  },
+  "info": {
+    "title": "Info",
+    "id": "ID",
+    "created-at": "Created At",
+    "modified-at": "Modified At",
+    "status": "Status",
+    "private-note": "Private Note"
+  },
+  "customer": {
+    "title": "Customer"
+  },
+  "catalog-item": {
+    "title": "Catalog Item",
+    "catalog-item-id": "Catalog Item ID",
+    "catalog-item-currency": "Catalog Item Currency",
+    "catalog-item-language": "Catalog Item Language"
+  },
+  "history": {
+    "title": "History",
+    "table": {
+      "columns": {
+        "from-status": "From Status",
+        "to-status": "To Status",
+        "created-at": "Created At",
+        "description": {
+          "original-private-note": "Original Private Note",
+          "new-private-note": "New Private Note"
+        }
+      }
+    }
+  }
+}

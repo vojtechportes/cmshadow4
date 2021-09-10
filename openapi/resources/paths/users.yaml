@@ -1,0 +1,239 @@
+Users:
+  get:
+    parameters:
+      - in: query
+        name: sortOrder
+        required: false
+        schema:
+          type: array
+          items:
+            $ref: "../sort-order.yaml#/SortOrder"
+      - in: query
+        name: page
+        required: false
+        schema:
+          type: integer
+          format: int64
+      - in: query
+        name: pageOffset
+        required: false
+        schema:
+          type: integer
+          format: int64
+    tags:
+      - users
+    operationId: getUsers
+    summary: Returns list of users
+    responses:
+      200:
+        description: Get user list
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/UserList"
+  post:
+    tags:
+      - users
+    operationId: createUser
+    summary: Creates a user
+    requestBody:
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/UserRequestBody'
+    responses:
+      201:
+        description: Ok, user created
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/UserResponseBody'
+
+User:
+  parameters:
+    - in: path
+      name: userId
+      required: true
+      schema:
+        type: integer
+        format: int64
+  get:
+    tags:
+      - users
+    operationId: getUser
+    summary: Gets a user
+    responses:
+      200:
+        description: Gets one user
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/User"
+      404:
+        description: User does not exist
+  put:
+    tags:
+      - users
+    operationId: updateUser
+    summary: Updates a user
+    requestBody:
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/UserRequestBody'    
+    responses:
+      204:
+        description: Ok, user updated
+      400:
+        description: User could not be updated
+      404:
+        description: User does not exist
+  delete:
+    tags:
+      - users
+    summary: Deletes a user
+    responses:
+      204:
+        description: Ok, deleted
+      404:
+        description: User does not exist
+
+Activate:
+  parameters:
+    - in: path
+      name: userId
+      required: true
+      schema:
+        type: integer
+        format: int64
+  put:
+    tags:
+      - users
+    operationId: activateUser
+    summary: Activates a user
+    responses:
+      204:
+        description: Ok, user activated
+      404:
+        description: User does not exist
+      409:
+        description: User is already activated
+
+Deactivate:
+  parameters:
+    - in: path
+      name: userId
+      required: true
+      schema:
+        type: integer
+        format: int64
+  put:
+    tags:
+      - users
+    operationId: deactivateUser
+    summary: Deactivates a user
+    responses:
+      204:
+        description: Ok, user deactivated
+      404:
+        description: User does not exist
+      409:
+        description: User is already deactivated
+
+components:
+  UserList:
+    required:
+      - items
+      - total
+    properties:
+      items:
+        type: array
+        items:
+          $ref: "#/components/User"
+      total:
+        type: integer
+        format: int64
+
+  User:
+    type: object
+    required:
+      - id
+      - name
+      - fullName
+      - email
+      - createdAt
+      - updateAt
+      - deletedAt
+      - status
+      - roles
+    properties:
+      id:
+        type: integer
+        format: int64
+        description: ID of the user
+      name:
+        type: string
+        description: User name
+      fullName:
+        type: string
+        description: Full name of the user
+      email:
+        type: string
+        description: Email of the user
+      createdAt:
+        type: string
+        format: date-time
+        description: Creation date of the user
+      modifiedAt:
+        type: string
+        format: date-time
+        description: Modification date of the user
+      status:
+        $ref: '#/components/UserStatus'
+      roles:
+        $ref: '#/components/UserRoles'
+
+  UserStatus:
+    type: string
+    enum:
+      - ACTIVE
+      - INACTIVE
+      - DELETED
+  
+  UserRoles:
+    type: array
+    items:
+      type: string
+
+  UserRequestBody:
+    type: object
+    required:
+      - name
+      - fullName
+      - email
+      - password
+    properties:
+      name:
+        type: string
+        description: Name of the user
+      fullName:
+        type: string
+        description: Full name of the user
+      email:
+        type: string
+        description: Email of the user
+      password:
+        type: string
+        format: password
+        description: Password of the user
+      roles:
+        $ref: "#/components/UserRoles" 
+
+  UserResponseBody:
+    type: object
+    properties:
+      id:
+        type: integer
+        format: int64
+        description: Id of the user
+    

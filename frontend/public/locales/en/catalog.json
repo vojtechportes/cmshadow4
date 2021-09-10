@@ -1,0 +1,46 @@
+{
+  "scene-title": "Catalog Items",
+  "create-new-catalog-item": "Create New Catalog Item",
+  "filters": {
+    "title": "Filters",
+    "name": "Name",
+    "sku": "SKU",
+    "categories": "Categories",
+    "status": "Status",
+    "submit": "Filter"
+  },
+  "table": {
+    "columns": {
+      "id": "ID",
+      "field-name-value": "Name",
+      "field-sku-value": "SKU",
+      "created-at": "Created At",
+      "modified-at": "Modified At",
+      "published-at": "Published At",
+      "status": "Status",
+      "booked": "Booked"
+    },    
+    "context-menu": {
+      "edit": "Edit",
+      "publish": "Publish",
+      "unpublish": "Unpublish",
+      "delete": "Delete",
+      "book": "Book",
+      "unbook": "Unbook",
+      "delete-dialog": {
+        "text": "Are you sure you want to delete this catalog item?",
+        "confirm": "Yes",
+        "cancel": "No"
+      }
+    }, 
+    "yes": "YES",
+    "no": "NO",
+    "n-a": "N/A",
+    "published": "Published",
+    "delete-success": "Catalog item was successfully deleted",
+    "publish-success": "Catalog item was successfully published",
+    "unpublish-success": "Catalog item was successfully unpublished",
+    "book-success": "Catalog item was successfully booked",
+    "unbook-success": "Catalog item was successfully unbooked"  
+  }
+}

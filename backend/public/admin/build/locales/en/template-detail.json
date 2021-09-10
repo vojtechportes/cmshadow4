@@ -1,0 +1,22 @@
+{
+  "scene-title": {
+    "new": "New Template",
+    "detail": "Template Detail",
+    "back-to-templates": "Back to Templates"
+  },
+  "form": {
+    "layout-id": "Layout",
+    "view-id": "View",
+    "name": "Name",
+    "html-head-end": "HTML Head End",
+    "html-body-start": "HTML Body Start",
+    "html-body-end": "HTML Body End",
+    "template-pages": "Template Pages",
+    "submit": {
+      "new": "Create",
+      "detail": "Save"
+    },
+    "create-success": "Template was successfully created",
+    "update-success": "Template was successfully updated"
+  }
+}

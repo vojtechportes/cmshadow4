@@ -1,0 +1,52 @@
+{
+  "scene-title": {
+    "new": "New Layout",
+    "detail": "Layout Detail",
+    "back-to-layouts": "Back to Layouts"
+  },
+  "create-success": "Layout was successfully created",
+  "update-success": "Layout was successfully updated",
+  "form": {
+    "title": "General",
+    "name": "Name",
+    "submit": {
+      "new": "Create",
+      "detail": "Save"
+    }
+  },
+  "slots": {
+    "title": "Layout Slots",
+    "no-slots": "This layout has no slots so far",
+    "create-new-slot": "Create New Slot",
+    "add": "Add Slot Here",
+    "edit": "Edit",
+    "delete": "Delete",
+    "dialog": {
+      "text": "Are you sure you want to delete this layout slot?",
+      "confirm": "Yes",
+      "cancel": "No"
+    },
+    "create-success": "Layout slot was successfully created",
+    "update-success": "Layout slot was successfully updated",
+    "delete-success": "Layout slot was successfully deleted"
+  },
+  "slot-modal": {
+    "form": {
+      "parent-id": {
+        "label": "Parent",
+        "root": "Root"
+      },
+      "name": "Name",
+      "writeable": "Writeable",
+      "locked": "Locked",
+      "weight": "Weight",
+      "html-class-name": "HTML Class Name",
+      "html-id": "HTML ID",
+      "submit": {
+        "new": "Create",
+        "detail": "Save"
+      },
+      "close": "Close"
+    }
+  }
+}

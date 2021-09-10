@@ -1,0 +1,73 @@
+openapi: "3.0.0"
+info:
+  title: "CMShadow API"
+  version: "0.1.0"
+  description: "CMShadow API"
+  contact:
+    email: "vojtech.v.portes@gmail.com"
+
+tags:
+  - name: "CMShadow"
+
+paths:
+  # Pages
+  # =====
+
+  /pages:
+    $ref: "resources/paths/pages.yaml#/Pages"
+
+  /pages/clone:
+    $ref: "resources/paths/pages.yaml#/PagesClone"    
+
+  /pages/{pageId}:
+    $ref: "resources/paths/pages.yaml#/Page"
+
+  /pages/{pageId}/versions:
+    $ref: "resources/paths/pages.yaml#/Versions"
+
+  /pages/{pageId}/modules:
+    $ref: "resources/paths/pages.yaml#/PageModules"
+
+  /pages/{pageId}/publish:
+    $ref: "resources/paths/pages.yaml#/Publish"
+
+  /pages/{pageId}/unpublish:
+    $ref: "resources/paths/pages.yaml#/Unpublish"
+
+  /pages/export:
+    $ref: "resources/paths/pages.yaml#/Export"
+
+  /pages/import:
+    $ref: "resources/paths/pages.yaml#/Import"
+
+  # Modules
+  # =======
+
+  /modules:
+    $ref: "resources/paths/modules.yaml#/Modules"
+
+  /modules/{moduleId}:
+    $ref: "resources/paths/modules.yaml#/Module"
+
+  # Modules / Text
+
+  /modules/text:
+    $ref: "resources/paths/modules/text.yaml#/CreateText"
+
+  /modules/text/{textId}:
+    $ref: "resources/paths/modules/text.yaml#/Text"
+
+  # Users
+  # =====
+
+  /users:
+    $ref: "resources/paths/users.yaml#/Users"
+
+  /users/{userId}:
+    $ref: "resources/paths/users.yaml#/User"
+
+  /users/{userId}/activate:
+    $ref: "resources/paths/users.yaml#/Activate"
+
+  /users/{userId}/deactivate:
+    $ref: "resources/paths/users.yaml#/Deactivate"

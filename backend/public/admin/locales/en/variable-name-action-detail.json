@@ -1,0 +1,18 @@
+{
+  "scene-title": {
+    "new": "New Variable Name Action",
+    "detail": "Variable Name Action Detail",
+    "back-to-variable-name-actions": "Back to Variable Name Actions"
+  },
+  "form": {
+    "variable-name": "Variable Name",
+    "path": "Path",
+    "action": "Action",
+    "submit": {
+      "new": "Create",
+      "detail": "Save"
+    }
+  },
+  "create-success": "Variable Name Action was successfully created",
+  "update-success": "Variable Name Action was successfully updated"
+}

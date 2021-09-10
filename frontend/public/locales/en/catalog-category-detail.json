@@ -1,0 +1,25 @@
+{
+  "scene-title": {
+    "detail": "Catalog Category",
+    "new": "New Catalog Category",
+    "back-to-categories": "Back to Categories"
+  },
+  "form": {
+    "name": "Name",
+    "parent": "Parent Category",
+    "weight": "Weight",
+    "name-localized": "Name ({{language}})",
+    "description-localized": "Description ({{language}})",
+    "submit": {
+      "new": "Create",
+      "create-and-create-another": "Create and Create Another",
+      "detail": "Save"
+    }
+  },
+  "none": "None",
+  "update-success": "Category was successfully updated",
+  "create-success": "Category was successfully created",
+  "delete-success": "Category was successfully deleted",
+  "publish-success": "Category was successfully published",
+  "unpublish-success": "Category was successfully unpublished"
+}

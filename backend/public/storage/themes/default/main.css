@@ -1,0 +1,55 @@
+@import "../antik/form.css";
+@import "../antik/main.css";
+@import "admin.css";
+
+
+body {
+  margin: 0;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 600px;
+  background: url(https://lh3.googleusercontent.com/-O5JyOQ267b0/WyejSHifLNI/AAAAAAAAoVU/yo0SRlsLD1wqj98KrR_kXU57EBQJiUz6gCHMYBhgL/s0/71109_7.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.content {
+  padding: 24px;
+  border-bottom: 1px solid #EEE;
+}
+
+.content::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.content--left {
+  float: left;
+  width: 200px;
+}
+
+.content--right {
+  float: left;
+  width: calc(100% - 200px);
+}
+
+.header .heading h1 {
+  color: #FFF;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+}
+
+.heading h1 {
+  font-size: 36px;
+}
+
+.button {
+  padding: 10px;
+  border-radius: 5px;
+  background: blue;
+  color: white;
+}

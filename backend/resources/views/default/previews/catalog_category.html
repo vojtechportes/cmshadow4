@@ -1,0 +1,19 @@
+<h2>
+  {block(() => {
+    if (load_from_global_context) {
+      return <span>Category name will load from global context</span>;
+    } else {
+      if (category_id_variable_name) {
+        return <span>Category name using {category_id_variable_name}</span>;
+      } else {
+        if (language_code) {
+          return <span>{data.data[language_code].name}</span>;
+        } else {
+          const currentLanguage = Object.keys(data.data)[0];
+
+          return <span>{data.data[currentLanguage].name}</span>;
+        }
+      } 
+    }
+  })}
+</h2>

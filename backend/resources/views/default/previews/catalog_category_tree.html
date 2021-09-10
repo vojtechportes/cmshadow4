@@ -1,0 +1,19 @@
+<ul>
+  {items && iterator(items, (item, renderItem) => {
+    const link = link_pattern.replace('{catalogCategoryId}', item.id);
+    
+    return (
+      <li>
+        <a href={link} data-id={item.id}>
+          {item.data && item.data.name}
+        </a>
+
+        {item.children && (
+          <ul>
+            {iterator(item.children, renderItem)}
+          </ul>
+        )}
+      </li>
+    )
+  })}
+</ul>

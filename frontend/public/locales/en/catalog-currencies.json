@@ -1,0 +1,25 @@
+{
+  "scene-title": "Catalog Currencies",
+  "create-new-catalog-currency": "Create New Catalog Currency",
+  "table": {
+    "columns": {
+      "id": "ID",
+      "code": "Code",
+      "name": "Name",
+      "symbol": "Symbol",
+      "rate": "Rate",
+      "is-main": "Is Main"
+    },
+    "yes": "Yes",
+    "no": "No",
+    "context-menu": {
+      "edit": "Edit",
+      "delete": "Delete",
+      "delete-dialog": {
+        "text": "Are you sure you want to remove this currency?",
+        "confirm": "Yes",
+        "cancel": "No"
+      }
+    }
+  }
+}

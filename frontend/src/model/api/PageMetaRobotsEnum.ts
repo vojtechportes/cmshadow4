@@ -1,0 +1,7 @@
+export enum PageMetaRobotsEnum {
+  'ALL' = 'ALL',
+  'NOINDEX' = 'NOINDEX',
+  'NOINDEX_NOFOLLOW' = 'NOINDEX_NOFOLLOW',
+  'INDEX_NOFOLLOW' = 'INDEX_NOFOLLOW',
+  'INDEX_FOLLOW' = 'INDEX_FOLLOW',
+}

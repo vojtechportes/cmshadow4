@@ -1,0 +1,28 @@
+{
+  "mixed": {
+    "default": "Field is invalid",
+    "required": "Field is required",
+    "passwords-dont-match": "Passwords don't match",
+    "invalidSex": "Selected sex is invalid. Sex must correspond with sex in your ID",
+    "invalid-combined-share": "Combined share of all fields must be 100%",
+    "funds-in-package-required": "At least one fund is required in the portfolio.",
+    "forbidden-investment-type": "Fund does not allow portfolio's investment type"
+  },
+  "string": {
+    "length": "This field must be exactly {length} {length, plural, one {character} other {characters}}",
+    "min": "This field must be at least {min} {min, plural, one {character} other {characters}}",
+    "max": "This field must be at most {max} {max, plural, one {character} other {characters}}",
+    "email": "This field must be a valid e-mail"
+  },
+  "number": {
+    "min": "This field must be greater than or equal to {min}",
+    "max": "This field must be less than or equal to {max}",
+    "lessThan": "This field must be less than {less}",
+    "moreThan": "This field must be more than {more}",
+    "integer": "This field must be an integer"
+  },
+  "date": {
+    "max": "This field must be at earlier than [max, date]",
+    "min": "This field must be later than [min, date]"
+  }
+}

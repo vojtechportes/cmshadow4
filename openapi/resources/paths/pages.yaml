@@ -1,0 +1,482 @@
+Pages:
+  get:
+    operationId: getPages
+    tags:
+      - pages
+    parameters:
+      - in: query
+        name: sortOrder
+        required: false
+        schema:
+          type: array
+          items:
+            $ref: "../sort-order.yaml#/SortOrder"
+      - in: query
+        name: page
+        required: false
+        schema:
+          type: integer
+          format: int64
+      - in: query
+        name: pageOffset
+        required: false
+        schema:
+          type: integer
+          format: int64
+    summary: Returns list of pages
+    responses:
+      200:
+        description: Get page list
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/PageList"
+  post:
+    tags:
+      - pages
+    operationId: createPage
+    summary: Creates a page
+    requestBody:
+      content:
+        application/json:
+          schema:
+            $ref: "#/components/PageRequestBody"
+    responses:
+      201:
+        description: Ok, page created
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/PageResponseBody"
+      400:
+        description: Page could not be saved due to missing information
+      409:
+        description: Page with this path already exists
+  delete:
+    tags: 
+      - pages
+    operationId: deletePages
+    parameters:
+      - in: query
+        name: ids
+        schema:
+          type: array
+          items:
+            type: integer
+            format: int64 
+    summary: Deletes collection of pages
+    responses:
+      204:
+        description: Ok, pages deleted
+      400:
+        description: Pages could not be deleted
+
+PagesClone:
+  post:
+    tags: 
+      - pages
+    operationId: clonePages
+    parameters:
+      - in: query
+        name: ids
+        schema:
+          type: array
+          items:
+            type: integer
+            format: int64 
+    summary: Clones collection of pages
+    requestBody:
+      content:
+        application/json:
+          schema:
+            items:
+              $ref: '#/components/ClonePageRequestBody'
+    responses:
+      204:
+        description: Ok, pages cloned
+      400:
+        description: Pages could not be cloned
+      409:
+        description: Page with this path already exists
+
+Page:
+  parameters:
+    - in: path
+      name: pageId
+      required: true
+      schema:
+        type: integer
+        format: int64
+  get:
+    tags:
+      - pages
+    operationId: getPage
+    summary: Gets a page
+    responses:
+      200:
+        description: Page detail
+        content:
+          application/json:
+            schema:
+              type: object
+              allOf:
+                - $ref: "#/components/PageDetail"
+                - $ref: "#/components/Page"
+              required:
+                - meta
+              properties:
+                meta:
+                  $ref: "#/components/PageMeta"
+      404:
+        description: Page does not exist
+  post:
+    tags:
+      - pages
+    operationId: clonePage
+    summary: Clones a page
+    responses:
+      201:
+        description: Page cloned
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/PageResponseBody"
+  put:
+    tags:
+      - pages
+    operationId: updatePage
+    summary: Updates a page
+    requestBody:
+      content:
+        application/json:
+          schema:
+            $ref: "#/components/PageRequestBody"
+    responses:
+      204:
+        description: Ok, paage created
+      404:
+        description: Page does not exist  
+
+  delete:
+    tags:
+      - pages
+    operationId: page
+    summary: Deletes a page
+    responses:
+      204:
+        description: Ok, deleted
+      404:
+        description: Page does not exist
+
+Publish:
+  parameters:
+    - in: path
+      name: pageId
+      required: true
+      schema:
+        type: integer
+        format: int64
+  put:
+    tags:
+      - pages
+    operationId: publishPage
+    summary: Publishes a page
+    responses:
+      204:
+        description: Ok, published
+      404:
+        description: Page does not exist
+      409:
+        description: Page is already published
+      422:
+        description: Page could not be published due to missing information
+
+PageModules:
+  parameters:
+    - in: path
+      name: pageId
+      required: true
+      schema:
+        type: integer
+        format: int64
+    - in: query
+      name: slotId
+      required: false
+      schema:
+        type: integer
+        format: int64
+  get:
+    tags:
+      - pages
+    operationId: getPageModules
+    summary: Gets all page modules
+    responses:
+      200:
+        description: Gets list of modules
+        content:
+          application/json:
+            schema:
+              items:
+                $ref: "modules.yaml#/components/Module"
+
+Unpublish:
+  parameters:
+    - in: path
+      name: pageId
+      required: true
+      schema:
+        type: integer
+        format: int64
+  put:
+    tags:
+      - pages
+    operationId: unpublishPage
+    summary: Unpublishes a page
+    responses:
+      204:
+        description: Ok, unpublished
+      404:
+        description: Page does not exist
+      409:
+        description: Page is already unpublished
+
+Versions:
+  parameters:
+    - in: path
+      name: pageId
+      required: true
+      schema:
+        type: integer
+        format: int64
+  get:
+    tags: 
+      - pages
+    operationId: getPageVersions
+    responses:
+      200:
+        description: Gets all page versions
+        content:
+          application/json:
+            schema:
+              items:
+                $ref: '#/components/Version'
+Export:
+  parameters:
+    - in: query
+      name: ids
+      required: true
+      schema:
+        type: array
+        items:
+          type: integer
+          format: int64
+  get:
+    tags:
+      - pages
+    operationId: exportPages
+    summary: Exports pages in zip archive
+    responses:
+      200:
+        description: Content of zip archive
+        content:
+          application/zip:
+            schema:
+              type: string
+              format: binary    
+
+Import:
+  post:
+    tags:
+     - pages
+    operationId: importPages
+    summary: Imports pages from zip archive
+    requestBody:
+      content:
+        application/zip:
+          schema:
+            type: string
+            format: binary
+    responses:
+      204:
+        description: Ok, uploaded
+
+components:
+  PageList:
+    required:
+      - items
+      - total
+    properties:
+      items:
+        type: array
+        items:
+          $ref: "#/components/Page"
+      total:
+        type: integer
+        format: int64
+
+  Page:
+    type: object
+    required:
+      - id
+      - name
+      - path
+      - createdAt
+      - modifiedAt
+      - status
+      - type
+      - version
+      - author
+    properties:
+      id:
+        type: integer
+        format: int64
+        description: ID of the page
+      name:
+        type: string
+        description: Internal name of the page
+      path:
+        type: string
+        description: Url of the page
+      createdAt:
+        type: string
+        format: date-time
+        description: Creation date of the page
+      modifiedAt:
+        type: string
+        format: date-time
+        description: Modification date of the page
+      status:
+        $ref: "#/components/PageStatus"
+        description: Status of the page
+      type:
+        $ref: "#/components/PageType"
+        description: Type of the page
+      version:
+        type: integer
+        format: int64
+        description: Version of the page
+      author:
+        type: integer
+        format: int64
+        description: ID of the author (user) of the page
+
+  PageDetail:
+    type: object
+    required:
+      - template
+      - inheritTemplate
+      - tags
+    properties:
+      template:
+        type: string
+      inheritTemplate:
+        type: boolean
+      tags:
+        type: array
+        items:
+          type: integer
+          format: int64
+
+  PageMeta:
+    type: object
+    required:
+      - title
+      - description
+      - keywords
+      - robots
+      - author
+    properties:
+      title:
+        type: string
+        description: HTML title of the page
+      description:
+        type: string
+        description: HTML description of the page
+      keywords:
+        type: string
+        description: HTML description of the page
+      robots:
+        $ref: "#/components/PageMetaRobots"
+        description: HTML robots specification of the page
+      author:
+        type: string
+        description: HTML author of the page
+
+  PageRequestBody:
+    type: object
+    required:
+      - name
+      - path
+    properties:
+      name:
+        type: string
+        description: Internal name of the page
+      path:
+        type: string
+        description: Url of the page
+      meta:
+        $ref: '#/components/PageMeta'
+
+  ClonePageRequestBody:
+    type: object
+    required:
+      - name
+      - path
+    properties:
+      name:
+        type: string
+        description: Internal name of the page
+      path:
+        type: string
+        description: Url of the page
+
+  PageResponseBody:
+    type: object
+    properties:
+      id:
+        type: integer
+        format: int64
+        description: Id of the page
+
+  PageStatus:
+    type: string
+    enum:
+      - DRAFT
+      - PUBLISHED
+      - UNPUBLISHED
+      - DELTED
+
+  PageType:
+    type: string
+    enum:
+      - PAGE
+      - FOLDER
+
+  PageMetaRobots:
+    type: string
+    enum:
+      - FOLLOW
+      - NOFOLLOW
+      - INDEX
+      - NOINDEX
+      - ALL
+  
+  Version:
+    type: object
+    required:
+      - id
+      - version
+      - createdAt
+    properties:
+      id:
+        type: integer
+        format: int64
+        description: Version id
+      version:
+        type: integer
+        format: int64
+        description: Version number
+      createdAt:
+        type: string
+        format: date-time
+        description: Creation date of version

@@ -1,0 +1,17 @@
+{
+  "scene-title": {
+    "new": "Create Variable Mapping",
+    "detail": "Edit Variable Mapping",
+    "back-to-navigation-item-variable-mappings": "Back to Navigation Item Variable Mappings"
+  },
+  "form": {
+    "variable-name": "Variable Name",
+    "value": "Value",
+    "submit": {
+      "new": "Create",
+      "detail": "Save"
+    }
+  },
+  "create-success": "Navigation item variable mapping was successfully created",
+  "update-success": "Navigation item variable mapping was successfully udpated"
+}

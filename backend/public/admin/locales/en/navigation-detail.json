@@ -1,0 +1,34 @@
+{
+  "scene-title": {
+    "new": "New Navigation",
+    "detail": "Navigation Detail",
+    "back-to-navigations": "Back to Navigations"
+  },
+  "form": {
+    "name": "Name",
+    "path": "Template Path",
+    "submit": {
+      "new": "Create",
+      "detail": "Save"
+    }
+  },
+  "items": {
+    "title": "Items",
+    "create-new-item": "Create New Item",
+    "tree": {
+      "context-menu": {
+        "edit": "Edit",
+        "edit-mapping": "Edit Mapping",
+        "create": "Create Item Here",
+        "delete": "Delete",
+        "delete-dialog": {
+          "text": "Are you sure you want to delete this navigation item? All subordinated navigation items will be deleted as well.",
+          "confirm": "Yes",
+          "cancel": "No"
+        }
+      }
+    }
+  },
+  "items-info": "Navigation items that are linked to page in \"draft\" state or are children of page in \"draft\" state won't be included in navigation.",
+  "items-warning": "Navigation items are not versioned. Any changes that are not likned to versioned content (pages) will be propagated imediatelly."
+}

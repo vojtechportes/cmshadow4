@@ -1,0 +1,29 @@
+{
+  "scene-title": "Pages",
+  "create-new-page": "Create New Page",
+  "one-level-up": "One Level Up",
+  "table": {
+    "columns": {
+      "name": "Name",
+      "path": "Path",
+      "status": "Status",
+      "version": "Version",
+      "created-at": "Created At",
+      "modified-at": "Modified At"
+    },
+    "published-in-previous-version": "Published in previous version",
+    "context-menu": {
+      "edit": "Edit",
+      "add": "Add page here",
+      "publish": "Publish",
+      "unpublish": "Unpublish",
+      "delete": "Delete",
+      "delete-dialog": {
+        "text": "Are you sure you want to delete this page?",
+        "confirm": "Yes",
+        "cancel": "No"
+      }
+    }
+  },
+  "delete-success": "Page was successfully deleted"
+}

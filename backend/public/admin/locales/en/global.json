@@ -1,0 +1,41 @@
+{
+  "html-title": "CMShadow",
+  "navigation": {
+    "dashboard": "Dashboard",
+    "content": "Content",
+    "catalog": "Catalog",
+    "forms": "Forms",
+    "settings": "Settings",
+    "logout": "Log Out"
+  },
+  "sidebar": {
+    "catalog": {
+      "items": "Items",
+      "templates": "Templates",
+      "languages": "Languages",
+      "categories": "Categories",
+      "currencies": "Currencies"
+    },
+    "content": {
+      "pages": "Pages",
+      "layouts": "Layouts",
+      "templates": "Templates",
+      "template-pages": "Template Pages",
+      "views": "Views",
+      "variable-name-actions": "Variable Name Actions",
+      "modules": {
+        "title": "Modules",
+        "navigations": "Navigations",
+        "buttons": "Buttons"
+      }
+    }
+  },
+  "internal-server-error": {
+    "text": "Sorry, something went wrong :(",
+    "button": "Go to Dashboard"
+  },  
+  "page-not-found": {
+    "text": "Sorry, we couldn't find what you were looking for :(",
+    "button": "Go to Dashboard"
+  }
+}

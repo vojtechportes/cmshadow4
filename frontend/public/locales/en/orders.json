@@ -1,0 +1,28 @@
+{
+  "scene-title": "Orders",
+  "table": {
+    "columns": {
+      "id": "ID",
+      "status": "Status",
+      "created-at": "Created At",
+      "modified-at": "Modified At",
+      "catalog-item-id": "Catalog Item ID",
+      "catalog-item-currency": "Catalog Item Currency",
+      "catalog-item-language": "Catalog Item Language"
+    },
+    "context-menu": {
+      "silent": "Silent",
+      "view": "View",
+      "accept": "Accept",
+      "reject": "Reject",
+      "close": "Close",
+      "reopen": "Reopen",
+      "delete": "Delete",
+      "delete-dialog": {
+        "text": "Are you sure you want to delete this order?",
+        "confirm": "Yes",
+        "cancel": "No"
+      }
+    }
+  }
+}

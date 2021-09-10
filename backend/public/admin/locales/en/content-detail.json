@@ -1,0 +1,154 @@
+{
+  "scene-title": {
+    "detail": "Page Detail",
+    "back-to-pages": "Back to Pages"
+  },
+  "tabs": {
+    "editor": "Editor",
+    "properties": "Properties",
+    "versions": "Versions"
+  },
+  "properties": {
+    "tabs": {
+      "general": "General",
+      "meta": "Meta",
+      "advanced": "Advanced"
+    },
+    "general": {
+      "template-id": "Template",
+      "parent": "Parent",
+      "name": "Name",
+      "path": "Path"
+    },
+    "meta": {
+      "meta-title": "Title",
+      "meta-description": "Description",
+      "meta-keywords": "Meta Keywords",
+      "meta-robots": {
+        "label": "Robots",
+        "options": {
+          "ALL": "All",
+          "NOINDEX": "Noindex",
+          "NOINDEX_FOLLOW": "Noindex, Follow",
+          "NOINDEX_NOFOLLOW": "Noindex, Nofollow",
+          "INDEX_NOFOLLOW": "Index, Follow",
+          "INDEX_FOLLOW": "Index, Follow"
+        }
+      },
+      "meta-canonical": "Canonical",
+      "meta-image": {
+        "label": "Image",
+        "upload-file-text": "Click or drag and drop file to upload...",
+        "delete": "Delete"
+      }
+    },
+    "advanced": {
+      "html-head-end": "HTML Head End",
+      "html-body-start": "HTML Body Start",
+      "html-body-end": "HTML Body End"
+    }
+  },
+  "editor": {
+    "side-panel": {
+      "modules": "Modules",
+      "text": "Text",
+      "heading": "Heading",
+      "navigation": "Navigation",
+      "button": "Button",
+      "image": "Image",
+      "gallery": "Gallery",
+      "html": "HTML",
+      "catalog-listing": "Catalog Listing",
+      "catalog-item": "Catalog Item",
+      "catalog-detail": "Catalog Detail",
+      "catalog-category-tree": "Catalog Category Tree",
+      "catalog-category": "Catalog Category",
+      "catalog-search": "Catalog Search",
+      "catalog-price-range": "Catalog Price Range",
+      "carousel": "Carousel"
+    }
+  },
+  "module-type-enum": {
+    "text": "Text",
+    "heading": "Heading",
+    "navigation": "Navigation"
+  },
+  "versions": {
+    "table": {
+      "columns": {
+        "version": "Version",
+        "status": "Status",
+        "modified-at": "Modified At",
+        "modified-by": "Modified By"
+      },
+      "context-menu": {
+        "preview": "Preview",
+        "revert": "Revert"
+      }
+    }
+  },
+  "save": "Save",
+  "publish": "Publish",
+  "catalog-category-tree-configuration": {
+    "title": "Catalog category tree",
+    "category-id": "Parent category",
+    "display-if-parent-category-id": "Display if parent category id is under category",
+    "language-code": "Language",
+    "link-pattern": "Link pattern",
+    "link-pattern-info": "To reference current catalog category id in path, use {catalogCategoryId} placeholder."
+  },
+  "catalog-category-configuration": {
+    "title": "Catalog category",
+    "category-id": "Category",
+    "language-code": "Language",
+    "category-id-variable-name": "Category ID variable name",
+    "load-from-global-context": "Load from global context"
+  },
+  "catalog-search-configuration": {
+    "title": "Catalog search",
+    "search-placeholder": "Search placeholder",
+    "submit-label": "Submit text"
+  },
+  "heading-configuration": {
+    "title": "Heading",
+    "level": "Level"
+  },
+  "navigation-configuration": {
+    "title": "Title",
+    "navigation": "Navigation"
+  },
+  "button-configuration": {
+    "title": "Button",
+    "text": "Text",
+    "path": "Path",
+    "target": "Target",
+    "button-id": "Button style"
+  },
+  "image-configuration": {
+    "title": "Image",
+    "image": "Image",
+    "image-upload": "Upload or drag and drop image you want to upload",
+    "image-title": "Title"
+  },
+  "catalog-listing-configuration": {
+    "title": "Catalog listing",
+    "language": "Language",
+    "category-id": "Parent category",
+    "category-id-variable-name": "Category ID variable name"
+  },
+  "catalog-item-configuration": {
+    "title": "Catalog item",
+    "catalog-item-id": "Catalog item ID",
+    "language-code": "Language code"
+  },
+  "catalog-detail-configuration": {
+    "title": "Catalog detail configuration",
+    "catalog-item-id": "Catalog item ID",
+    "language-code": "Language",
+    "catalog-item-id-variable-name": "Catalog item ID variable name",
+    "load-from-global-context": "Load from global context"
+  },
+  "this-module-needs-to-be-configured-first": "This module needs to be configured first",
+  
+  "save-success": "Page was successfully saved"
+}

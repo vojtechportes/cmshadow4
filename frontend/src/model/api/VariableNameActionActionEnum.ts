@@ -1,0 +1,5 @@
+export enum VariableNameActionActionEnm {
+  'GET_CATALOG_ITEM' = 'GET_CATALOG_ITEM',
+  'GET_CATALOG_CATEGORY' = 'GET_CATALOG_CATEGORY',
+  'GET_PAGE_TAG' = 'GET_PAGE_TAG',
+}
